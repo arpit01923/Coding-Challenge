@@ -14,16 +14,17 @@
   display: flex;
 }
 
-.navbar .menubar > p,
-.navbar .menubar > span,
-.cart-icon {
+.navbar .menubar .prod,
+.navbar .menubar .cart-icon {
+  text-decoration: none;
   color: var(--secondary-color);
   margin: 0 1rem;
 }
 
-.navbar .menubar > span {
+.navbar .quant {
+  color: var(--secondary-color);
   position: absolute;
-  right: -8px;
+  right: 8px;
   top: 8px;
 }
 

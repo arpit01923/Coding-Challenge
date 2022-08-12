@@ -1,33 +1,33 @@
 .vertical-card {
   border: 1px solid black;
   width: 15rem;
-  height: 15rem;
+  height: 18rem;
   margin: 1rem;
   padding: 1rem;
 }
 
-.name {
-  position: absolute;
-  color: var(--primary-color);
+.vertical-card .name {
+  height: 10%;
+  margin-top: 0;
 }
 
-.image {
+.vertical-card .image {
   width: 100%;
-  height: 80%;
+  height: 50%;
 }
 
-.text {
+.vertical-card .text {
   display: flex;
-  height: 20%;
+  height: 40%;
   justify-content: space-between;
   align-items: center;
 }
 
-.price{
+.vertical-card .price {
   font-weight: bold;
 }
 
-.button {
+.vertical-card .button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   height: 2rem;

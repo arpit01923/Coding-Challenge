@@ -31,7 +31,10 @@ export const Product = () => {
       <section className="container">
         <Sidebar />
         <main className="product-container">
-          <VerticalCard filteredData={filteredData} />
+          <VerticalCard
+            filteredData={filteredData}
+            productDispatch={productDispatch}
+          />
         </main>
       </section>
     </>
