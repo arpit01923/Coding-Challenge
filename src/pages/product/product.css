@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.header .searchbar {
+  padding: 0.5rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.search-icon,
+.filter-icon {
+  margin: 0 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
