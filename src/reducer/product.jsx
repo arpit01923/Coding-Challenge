@@ -38,4 +38,4 @@ const productReducer = (productState, productAction) => {
   }
 };
 
-export { checkCategory, productReducer };
+export { productReducer };

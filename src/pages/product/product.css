@@ -17,9 +17,15 @@
   margin: 0 1rem;
 }
 
+.filter-icon {
+  display: none;
+}
+
 .container {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 15vw 80vw;
 }
 
 .product-container {

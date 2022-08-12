@@ -25,8 +25,6 @@ export const Product = () => {
           value={search}
           onChange={(e) => changeHandler(e)}
         />
-        <BsSearch className="search-icon" />
-        <FaFilter className="filter-icon" />
       </div>
       <section className="container">
         <Sidebar />

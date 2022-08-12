@@ -3,3 +3,12 @@
   --secondary-color: white;
   --default-color: black;
 }
+
+@media screen and (max-width: 786px) {
+  .filter-icon {
+    display: flex !important;
+  }
+  .horizontal-card {
+    max-width: 25rem !important;
+  }
+}

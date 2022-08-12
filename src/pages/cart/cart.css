@@ -6,7 +6,7 @@
 /* card */
 .horizontal-card {
   border: 1px solid black;
-  max-width: 35rem;
+  width: 35rem;
   height: 6rem;
   margin: 1rem;
   padding: 1rem;
@@ -45,10 +45,23 @@
 }
 
 .horizontal-card .button {
+  cursor: pointer;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   height: 2rem;
   border-radius: 5px;
   border: none;
   margin: 0.5rem;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
 }

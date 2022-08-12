@@ -1,1 +1,2 @@
-export { checkCategory, productReducer } from "./product";
+export { productReducer } from "./product";
+export { cartReducer } from "./cart";

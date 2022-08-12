@@ -15,28 +15,30 @@ export const Cart = () => {
   return (
     <>
       <h1 className="cart-header">Shopping Cart</h1>
-      {cartState.cart.map((product) => (
-        <section className="horizontal-card" key={product.id}>
-          <img src={product.imageURL} alt="image" className="image" />
-          <div className="text">
-            <p className="name">{product.name}</p>
-            <p className="price">Rs {product.price}</p>
-          </div>
-          <div className="quantity">
-            <p>{product.cartQuantity}</p>
-            <button
-              className="button"
-              onClick={() => increaseQuantity(product.id)}
-            >
-              +
+      <div className="cart-container">
+        {cartState.cart.map((product) => (
+          <section className="horizontal-card" key={product.id}>
+            <img src={product.imageURL} alt="image" className="image" />
+            <div className="text">
+              <p className="name">{product.name}</p>
+              <p className="price">Rs {product.price}</p>
+            </div>
+            <div className="quantity">
+              <p>{product.cartQuantity}</p>
+              <button
+                className="button"
+                onClick={() => increaseQuantity(product.id)}
+              >
+                +
+              </button>
+            </div>
+            <button className="button" onClick={() => deleteItem(product.id)}>
+              Delete
             </button>
-          </div>
-          <button className="button" onClick={() => deleteItem(product.id)}>
-            Delete
-          </button>
-        </section>
-      ))}
-      <h1>Total amount: {totalPrice}</h1>
+          </section>
+        ))}
+      </div>
+      <h1 className="amount">Total amount: {totalPrice}</h1>
     </>
   );
 };
