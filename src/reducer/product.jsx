@@ -35,6 +35,8 @@ const productReducer = (productState, productAction) => {
         ...productState,
         search: productAction.payload,
       };
+    default:
+      return productState;
   }
 };
 

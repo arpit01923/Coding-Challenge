@@ -30,6 +30,8 @@ const cartReducer = (cartState, cartAction) => {
         ...cartState,
         cart: getProductsAfterDeletion(cartState.cart, cartAction.payload),
       };
+    default:
+      return cartState;
   }
 };
 

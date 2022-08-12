@@ -18,7 +18,7 @@ export const Cart = () => {
       <div className="cart-container">
         {cartState.cart.map((product) => (
           <section className="horizontal-card" key={product.id}>
-            <img src={product.imageURL} alt="image" className="image" />
+            <img src={product.imageURL} alt="product-img" className="image" />
             <div className="text">
               <p className="name">{product.name}</p>
               <p className="price">Rs {product.price}</p>

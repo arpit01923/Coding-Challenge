@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { BsSearch } from "react-icons/bs";
-import { FaFilter } from "react-icons/fa";
 import { Sidebar, VerticalCard } from "../../components";
 import { useProduct } from "../../context/product";
 import "./product.css";
