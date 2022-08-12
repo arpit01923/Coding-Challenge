@@ -1,9 +1,16 @@
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import { Navbar } from "./components/navbar/navbar";
+import { Cart, Product } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      Hello Arpit
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
     </div>
   );
 }

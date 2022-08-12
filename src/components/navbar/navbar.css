@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.navbar .logo {
+  color: var(--secondary-color);
+  margin: 1rem;
+}
+
+.navbar .menubar {
+  display: flex;
+}
+
+.navbar .menubar .prod,
+.navbar .menubar .cart-icon {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin: 0 1rem;
+}
+
+.navbar .quant {
+  color: var(--secondary-color);
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+}
